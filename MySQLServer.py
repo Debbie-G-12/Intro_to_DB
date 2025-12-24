@@ -2,11 +2,10 @@ import mysql.connector
 from mysql.connector import Error
 
 try:
-    # Connect to MySQL server
     connection = mysql.connector.connect(
         host='localhost',
         user='root',
-        password=''  # adjust your password
+        password=''  # replace with your MySQL password
     )
 
     cursor = connection.cursor()
